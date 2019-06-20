@@ -1,0 +1,188 @@
+// Colors
+$blk: #10161a;
+$blue: #6195ff;
+$dgray: #868f9b;
+$lgray: #ffffff;
+$overlay: #1c1d21;
+$border: #eee;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+// Navigation
+nav {
+    width: 100%;
+    padding: 18px 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 100%;
+            a {
+                color: $lgray;
+                text-decoration: none;
+                text-transform: uppercase;
+                h1 {
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    margin: 0;
+                }
+            }
+        }
+        .items-right {
+            display: flex;
+            align-items: center;
+            a {
+                margin-right: 30px;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: .9rem;
+                color: $lgray;
+                padding: 4px 0;
+                transition: .3s ease-in-out;
+                &:hover {
+                    opacity: .8;
+                }
+                &:nth-child(1) {
+                    border-bottom: 2px solid $blue;
+                }
+            }
+        }
+    }
+}
+
+// Hero Section
+.hero {
+    width: 100%;
+    background: url('img/background1.webp') no-repeat center center;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-attachment: fixed;
+    .overlay {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $overlay;
+        opacity: .8;
+    }
+    .container {
+        width: 100%;
+        max-width: 960px;
+        text-align: center;
+        position: relative;
+        z-index: 99;
+        h1 {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.4rem;
+            text-transform: uppercase;
+            color: $lgray;
+            font-weight: 700;
+        }
+        span {
+            display: block;
+            color: $lgray;
+            font-size: 1rem;
+            margin: 14px 0 0 0;
+            line-height: 1.7;
+        }
+        .hero-btn {
+            padding: 40px 0;
+            .btn {
+                border: 1px solid $lgray;
+                padding: 12px 35px;
+                border-radius: 3px;
+                border: 1px solid $lgray;
+                color: $blk;
+                background: $lgray;
+                font-size: 1rem;
+                text-transform: capitalize;
+                text-decoration: none;
+                margin-right: 6px;
+                transition: .3s ease-in-out;
+                &:hover {
+                    opacity: .8;
+                }
+                &:last-child {
+                    background: $blue;
+                    border: 1px solid $blue;
+                    color: $lgray;
+                }
+            }
+        }
+    }
+}
+
+.welcome {
+    width: 100%;
+    padding: 100px 0;
+    .border {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .blue-border {
+            height: 4px;
+            width: 40px;
+            background: $blue;
+        }
+    }
+    h1 {
+        margin: 0 0 20px 0;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: capitalize;
+        font-size: 2.3rem;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        .card {
+            width: 100%;
+            max-width: 375px;
+            margin: 60px 0 0 0;
+            padding: 45px 21px;
+            border: 1px solid $border;
+            i {
+                color: $blue;
+            }
+            h3 {
+                text-transform: capitalize;
+                font-size: 1.4rem;
+                margin: 20px 0 20px 0;
+                font-family: 'Montserrat', sans-serif;
+            }
+            p {
+                color: $dgray;
+            }
+            a {
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+    }
+}
