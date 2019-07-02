@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 
 .container {
@@ -64,15 +64,15 @@ nav .container .items-right a {
   margin-right: 30px;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: #ffffff;
   padding: 4px 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 nav .container .items-right a:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 nav .container .items-right a:nth-child(1) {
@@ -105,7 +105,7 @@ nav .container .items-right a:nth-child(1) {
   bottom: 0;
   left: 0;
   background: #1c1d21;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .hero .container {
@@ -118,7 +118,7 @@ nav .container .items-right a:nth-child(1) {
 
 .hero .container h1 {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.4rem;
   text-transform: uppercase;
   color: #ffffff;
@@ -148,12 +148,12 @@ nav .container .items-right a:nth-child(1) {
   text-transform: capitalize;
   text-decoration: none;
   margin-right: 6px;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .hero .container .hero-btn .btn:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .hero .container .hero-btn .btn:last-child {
@@ -162,12 +162,18 @@ nav .container .items-right a:nth-child(1) {
   color: #ffffff;
 }
 
-.welcome {
+.welcome,
+.featured,
+.offer,
+.pricing {
   width: 100%;
   padding: 100px 0;
 }
 
-.welcome .border {
+.welcome .border,
+.featured .border,
+.offer .border,
+.pricing .border {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,21 +183,30 @@ nav .container .items-right a:nth-child(1) {
           justify-content: center;
 }
 
-.welcome .border .blue-border {
+.welcome .border .blue-border,
+.featured .border .blue-border,
+.offer .border .blue-border,
+.pricing .border .blue-border {
   height: 4px;
   width: 40px;
   background: #6195ff;
 }
 
-.welcome h1 {
+.welcome h1,
+.featured h1,
+.offer h1,
+.pricing h1 {
   margin: 0 0 20px 0;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
   font-size: 2.3rem;
 }
 
-.welcome .container {
+.welcome .container,
+.featured .container,
+.offer .container,
+.pricing .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,7 +216,10 @@ nav .container .items-right a:nth-child(1) {
   text-align: center;
 }
 
-.welcome .container .card {
+.welcome .container .card,
+.featured .container .card,
+.offer .container .card,
+.pricing .container .card {
   width: 100%;
   max-width: 375px;
   margin: 60px 0 0 0;
@@ -209,23 +227,379 @@ nav .container .items-right a:nth-child(1) {
   border: 1px solid #eee;
 }
 
-.welcome .container .card i {
+.welcome .container .card i,
+.featured .container .card i,
+.offer .container .card i,
+.pricing .container .card i {
   color: #6195ff;
 }
 
-.welcome .container .card h3 {
+.welcome .container .card h3,
+.featured .container .card h3,
+.offer .container .card h3,
+.pricing .container .card h3 {
   text-transform: capitalize;
   font-size: 1.4rem;
   margin: 20px 0 20px 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.welcome .container .card p {
+.welcome .container .card p,
+.featured .container .card p,
+.offer .container .card p,
+.pricing .container .card p {
   color: #868f9b;
 }
 
-.welcome .container .card a {
+.welcome .container .card a,
+.featured .container .card a,
+.offer .container .card a,
+.pricing .container .card a {
   text-decoration: none;
   color: #6195ff;
+}
+
+.featured {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.featured .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 70px 0;
+}
+
+.featured .container .pic {
+  width: 365px;
+  height: 365px;
+  margin: 20px 0;
+}
+
+.featured .container .pic img {
+  width: 100%;
+  display: block;
+}
+
+.offer {
+  width: 100%;
+}
+
+.offer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 80px 0;
+}
+
+.offer .container .box {
+  border: 1px solid #eee;
+  width: 100%;
+  max-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px 20px 40px 20px;
+  margin-top: 30px;
+}
+
+.offer .container .box .icon {
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px 12px 0 0;
+}
+
+.offer .container .box .icon i {
+  width: 100%;
+  height: 100%;
+  color: #6195ff;
+}
+
+.offer .container .box .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+}
+
+.offer .container .box .card-content h3 {
+  margin: 0;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.offer .container .box .card-content p {
+  margin: 20px 0 0 0;
+  font-size: 1rem;
+  color: #868f9b;
+  line-height: 1.5;
+}
+
+.why-us {
+  width: 100%;
+  padding: 100px 0;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.why-us .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.why-us .container .card-left {
+  width: 100%;
+  max-width: 550px;
+}
+
+.why-us .container .card-left h1 {
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-size: 2.3rem;
+}
+
+.why-us .container .card-left .border {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.why-us .container .card-left .border .blue-border {
+  height: 4px;
+  width: 40px;
+  background: #6195ff;
+}
+
+.why-us .container .card-left .choose-us p {
+  color: #868f9b;
+  margin: 0;
+  padding: 55px 0 15px 0;
+  line-height: 1.8;
+}
+
+.why-us .container .card-left .feature .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.why-us .container .card-left .feature .icon i {
+  color: #6195ff;
+  margin-right: 7px;
+}
+
+.why-us .container .card-left .feature .icon p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #868f9b;
+}
+
+.why-us .container .img-right {
+  width: 100%;
+  max-width: 600px;
+}
+
+.why-us .container .img-right img {
+  display: block;
+  width: 100%;
+}
+
+.why-us .container .img-right .dots {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.why-us .container .img-right .dots i {
+  color: #eee;
+  margin-right: 4px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.why-us .container .img-right .dots i:nth-child(3) {
+  color: #6195ff;
+}
+
+.why-us .container .img-right .dots i:hover {
+  color: #6195ff;
+}
+
+.numbers {
+  width: 100%;
+  background: url("img/background2.webp") no-repeat center center;
+  background-size: cover;
+  padding: 80px;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -1;
+}
+
+.numbers .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.numbers .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.numbers .container .card-num {
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+
+.numbers .container .card-num i {
+  color: #6195ff;
+}
+
+.numbers .container .card-num h3 {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.numbers .container .card-num span {
+  display: block;
+  color: #fff;
+}
+
+.pricing {
+  width: 100%;
+}
+
+.pricing .container .card {
+  width: 100%;
+  max-width: 375px;
+}
+
+.pricing .container .card h3 {
+  margin: 0;
+  color: #868f9b;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.pricing .container .card .circle {
+  border: 2px solid #6195ff;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing .container .card .circle h3 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #10161a;
+}
+
+.pricing .container .card .circle span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+.pricing .container .card .features {
+  padding: 15px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pricing .container .card .features span {
+  display: block;
+  line-height: 2.4;
+  color: #868f9b;
+}
+
+.pricing .container .card .pricing-btn {
+  margin: 20px 0;
+}
+
+.pricing .container .card .pricing-btn a {
+  border: 2px solid #6195ff;
+  padding: 12px 35px;
+  border-radius: 4px;
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=style.css.map */
