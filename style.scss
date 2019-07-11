@@ -6,6 +6,7 @@ $lgray: #ffffff;
 $overlay: #1c1d21;
 $border: #eee;
 $featured: #fafafa;
+$footer: #1c1d21;
 
 * {
   box-sizing: border-box;
@@ -142,7 +143,10 @@ nav {
 .welcome,
 .featured,
 .offer,
-.pricing {
+.pricing,
+.team,
+.news,
+.contact {
   width: 100%;
   padding: 100px 0;
   .border {
@@ -447,6 +451,317 @@ nav {
           text-transform: capitalize;
         }
       }
+    }
+  }
+}
+
+// Testimonials
+.testimonials {
+  width: 100%;
+  background: url("img/background3.webp") no-repeat center center;
+  padding: 125px 0;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  background-attachment: fixed;
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.6;
+    z-index: -1;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    .card {
+      width: 100%;
+      max-width: 490px;
+      .wrap {
+        display: flex;
+        align-items: center;
+        img {
+          border-radius: 50%;
+        }
+        .info {
+          margin-left: 15px;
+          h1 {
+            margin: 0;
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 1.4rem;
+            font-family: "Montserrat", sans-serif;
+          }
+          span {
+            display: block;
+            color: $blue;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 8px;
+          }
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+// Team
+.team {
+  width: 100%;
+  .container {
+    .card {
+      width: 100%;
+      background: #f4f4f4;
+      padding: 40px 20px;
+      border: none;
+      .image {
+        height: 300px;
+        width: 330px;
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+      .name-role {
+        h3 {
+          margin: 12px 0;
+          font-size: 1.3rem;
+        }
+        span {
+          display: block;
+          text-transform: uppercase;
+          color: $dgray;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+// News
+.news {
+  width: 100%;
+  background: $featured;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    .box {
+      width: 100%;
+      max-width: 375px;
+      padding: 0 0 30px 0;
+      background: #fff;
+      .box-image {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+      .box-content {
+        text-align: left;
+        padding: 0 20px 0 20px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        .icon {
+          display: flex;
+          align-items: center;
+          i {
+            color: $blue;
+          }
+          p {
+            padding: 0 10px 0 4px;
+            text-transform: capitalize;
+            font-size: 0.89rem;
+          }
+        }
+      }
+      .box-text {
+        padding: 0 22px 0 20px;
+        text-align: left;
+        h3 {
+          font-weight: 600;
+          font-size: 1.3rem;
+          margin: 0;
+          font-family: "Montserrat", sans-serif;
+        }
+        p {
+          color: $dgray;
+          line-height: 1.5rem;
+        }
+        a {
+          color: $blue;
+          text-transform: capitalize;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Contact
+.contact {
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    .box {
+      width: 100%;
+      max-width: 380px;
+      i {
+        color: $blue;
+      }
+      h3 {
+        text-transform: capitalize;
+        font-size: 1.3rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        margin: 15px 0 0 0;
+      }
+      span {
+        display: block;
+        color: $dgray;
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+  .contact-form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    .first-last {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      input {
+        padding: 12px 10px;
+        background: #fafafa;
+        color: #bababa;
+        font-size: 0.98rem;
+        border: none;
+        &:focus {
+          color: #000;
+        }
+        &::placeholder {
+          color: #bfbfbf;
+        }
+        &:nth-child(1) {
+          width: 390px;
+        }
+        &:nth-child(2) {
+          width: 390px;
+        }
+      }
+    }
+    .subject {
+      margin: 20px 0 0 0;
+      input {
+        width: 100%;
+        padding: 12px 10px;
+        background: #fafafa;
+        color: #bababa;
+        font-size: 0.98rem;
+        border: none;
+        &::placeholder {
+          color: #bfbfbf;
+        }
+        &:focus {
+          color: #000;
+        }
+      }
+    }
+    .message {
+      margin: 20px 0 0 0;
+      textarea {
+        width: 100%;
+        padding: 12px 10px;
+        background: #fafafa;
+        color: #bababa;
+        font-size: 0.98rem;
+        border: none;
+        &::placeholder {
+          color: #bfbfbf;
+        }
+        &:focus {
+          color: #000;
+        }
+      }
+    }
+    .button {
+      text-align: center;
+      margin: 40px 0;
+      a {
+        background: $blue;
+        padding: 15px 40px;
+        color: #fff;
+        text-transform: capitalize;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  width: 100%;
+  background: $footer;
+  padding: 60px 0;
+  .footer-img {
+    width: 100%;
+    text-align: center;
+    img {
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .card {
+      margin: 40px 0 20px 0;
+      width: 100%;
+      max-width: 50px;
+      height: 50px;
+      background: $blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      i {
+        color: #fff;
+      }
+    }
+  }
+  p {
+    text-align: center;
+    color: #868f9b;
+    font-size: 0.9rem;
+    a {
+      color: $blue;
+      text-decoration: none;
     }
   }
 }
