@@ -1069,4 +1069,132 @@ footer p a {
   color: #6195ff;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .welcome .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 95%;
+  }
+  .welcome .container .card {
+    margin: 10px 0 0 0;
+  }
+  .featured .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .featured .container .pic {
+    margin: 10px 0 0 0;
+  }
+  .offer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .offer .container .box {
+    margin: 10px 0 0 0;
+  }
+  .why-us .container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .why-us .container .img-right {
+    margin: 20px 0 0 0;
+  }
+  .numbers .container {
+    width: 98%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .numbers .container .card-num {
+    width: 160px;
+    margin: 15px 0 0 0;
+  }
+  .pricing .container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pricing .container .card {
+    margin: 10px 0 0 0;
+  }
+  .testimonials {
+    text-align: center;
+  }
+  .testimonials .container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonials .container .card {
+    margin: 10px 0 0 0;
+  }
+  .testimonials .container .card .wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team .container .card {
+    margin: 10px 0 0 0;
+  }
+  .news .container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .news .container .box {
+    margin: 15px 0 0 0;
+  }
+  .contact .container {
+    width: 90%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .container .box {
+    max-width: 220px;
+    margin: 10px auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */

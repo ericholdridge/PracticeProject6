@@ -70,7 +70,7 @@ nav {
   }
 }
 
-// Hero Section
+// Hero
 .hero {
   width: 100%;
   background: url("img/background1.webp") no-repeat center center;
@@ -769,4 +769,130 @@ footer {
       text-decoration: none;
     }
   }
+}
+
+// Responsive design starts here
+@media (max-width: 768px) {
+  // Welcome
+  .welcome {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+      .card {
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+
+  // Featured
+  .featured {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .pic {
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+
+  // Offer
+  .offer {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .box {
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+
+  // Why Us
+  .why-us {
+    .container {
+      width: 90%;
+      flex-direction: column;
+      .img-right {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+
+  // Numbers
+  .numbers {
+    .container {
+      width: 98%;
+      flex-wrap: wrap;
+      .card-num {
+        width: 160px;
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+
+  // Pricing
+  .pricing {
+    .container {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      .card {
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+
+  // Testimonials
+  .testimonials {
+    text-align: center;
+    .container {
+      width: 90%;
+      flex-direction: column;
+      .card {
+        margin: 10px 0 0 0;
+        .wrap {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  // Team
+  .team {
+    .container {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      .card {
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+
+  // News
+  .news {
+    .container {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      .box {
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+
+  // Contact
+  .contact {
+    .container {
+      width: 90%;
+      flex-wrap: wrap;
+      align-items: center;
+      .box {
+        max-width: 220px;
+        margin: 10px auto;
+      }
+    }
+  }
+
+  // Footer
 }
