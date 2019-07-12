@@ -35,8 +35,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    #menu {
+      color: #fff;
+      cursor: pointer;
+      display: none;
+    }
     .logo {
-      width: 100%;
       a {
         color: $lgray;
         text-decoration: none;
@@ -69,6 +73,7 @@ nav {
     }
   }
 }
+
 
 // Hero
 .hero {
@@ -176,6 +181,7 @@ nav {
       margin: 60px 0 0 0;
       padding: 45px 21px;
       border: 1px solid $border;
+      position: relative;
       i {
         color: $blue;
       }
@@ -694,7 +700,7 @@ nav {
         padding: 12px 10px;
         background: #fafafa;
         color: #bababa;
-        font-size: 0.98rem;
+        font-size: 1.3rem;
         border: none;
         &::placeholder {
           color: #bfbfbf;
@@ -928,6 +934,41 @@ footer {
   }
 }
 
+@media (max-width: 1260px) {
+  nav {
+    background: #fff;
+    width: 100%;
+    .container {
+      flex-wrap: wrap;
+      width: 90%;
+      .logo {
+        a {
+          h1 {
+            color: #000;
+          }
+        }
+      }
+      #menu {
+        display: block;
+        color: #000;
+      }
+      .items-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &.hide {
+          display: none;
+        }
+        a {
+        -webkit-user-select: none;
+        color: #000;
+        font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1267px) {
   // Welcome
   .welcome {
@@ -996,6 +1037,20 @@ footer {
   .contact {
     .contact-form {
       max-width: 90%;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1265px) {
+  .team {
+    .container {
+      max-width: 90%;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      .card {
+        margin: 10px 0;
+      }
     }
   }
 }

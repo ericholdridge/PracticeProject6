@@ -35,8 +35,10 @@ nav .container {
           align-items: center;
 }
 
-nav .container .logo {
-  width: 100%;
+nav .container #menu {
+  color: #fff;
+  cursor: pointer;
+  display: none;
 }
 
 nav .container .logo a {
@@ -243,6 +245,7 @@ nav .container .items-right a:nth-child(1) {
   margin: 60px 0 0 0;
   padding: 45px 21px;
   border: 1px solid #eee;
+  position: relative;
 }
 
 .welcome .container .card i,
@@ -963,7 +966,7 @@ nav .container .items-right a:nth-child(1) {
   padding: 12px 10px;
   background: #fafafa;
   color: #bababa;
-  font-size: 0.98rem;
+  font-size: 1.3rem;
   border: none;
 }
 
@@ -1222,6 +1225,43 @@ footer p a {
   }
 }
 
+@media (max-width: 1260px) {
+  nav {
+    background: #fff;
+    width: 100%;
+  }
+  nav .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+  }
+  nav .container .logo a h1 {
+    color: #000;
+  }
+  nav .container #menu {
+    display: block;
+    color: #000;
+  }
+  nav .container .items-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  nav .container .items-right.hide {
+    display: none;
+  }
+  nav .container .items-right a {
+    -webkit-user-select: none;
+    color: #000;
+    font-weight: 600;
+  }
+}
+
 @media (max-width: 1267px) {
   .welcome .container {
     width: 90%;
@@ -1290,6 +1330,23 @@ footer p a {
 @media (max-width: 905px) {
   .contact .contact-form {
     max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1265px) {
+  .team .container {
+    max-width: 90%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team .container .card {
+    margin: 10px 0;
   }
 }
 
